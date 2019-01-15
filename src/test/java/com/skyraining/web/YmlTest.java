@@ -3,7 +3,7 @@ package com.skyraining.web;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.skyraining.util.SkyrainingProperties;
+import com.skyraining.util.SkyrainingYml;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,18 +13,18 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ProPertiesTest {
+public class YmlTest {
 
 	
 	@Autowired
-    private SkyrainingProperties skyrainingProperties;
+    private SkyrainingYml skyrainingYml;
 
 
     @Test
     public void getHello() throws Exception {
-    	System.out.println(skyrainingProperties.getTitle());
-        Assert.assertEquals(skyrainingProperties.getTitle(), "了解一下");
-        Assert.assertEquals(skyrainingProperties.getDescription(), "问题不大");
+    	System.out.println(skyrainingYml.getTitle());
+        Assert.assertEquals(skyrainingYml.getTitle(), "了解一下");
+        Assert.assertEquals(skyrainingYml.getDescription(), "问题不大");
     }
 
     

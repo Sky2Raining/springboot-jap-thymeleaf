@@ -1,4 +1,4 @@
-package com.skyraining.config;
+package com.skyraining.configuration;
 
 import java.lang.reflect.Method;
 
@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Configuration
 @EnableCaching
-public class RedisConfig extends CachingConfigurerSupport{
+public class RedisConfiguration extends CachingConfigurerSupport{
 	
 	@Bean
 	public KeyGenerator keyGenerator() {

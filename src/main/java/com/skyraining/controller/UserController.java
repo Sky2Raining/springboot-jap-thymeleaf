@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.skyraining.domain.User;
-import com.skyraining.domain.UserRepository;
+import com.skyraining.repository.UserRepository;
 
 @RestController
 @RequestMapping("/user")

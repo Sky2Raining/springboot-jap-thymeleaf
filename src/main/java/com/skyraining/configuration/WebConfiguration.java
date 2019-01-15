@@ -1,4 +1,4 @@
-package com.skyraining.config;
+package com.skyraining.configuration;
 
 import java.io.IOException;
 
