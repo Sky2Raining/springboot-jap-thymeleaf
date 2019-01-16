@@ -3,7 +3,7 @@ package com.skyraining.web;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.skyraining.util.SkyrainingYml;
+import com.skyraining.util.SkyrainingYmlUtil;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,14 +17,14 @@ public class YmlTest {
 
 	
 	@Autowired
-    private SkyrainingYml skyrainingYml;
+    private SkyrainingYmlUtil skyrainingYmlUtil;
 
 
     @Test
     public void getHello() throws Exception {
-    	System.out.println(skyrainingYml.getTitle());
-        Assert.assertEquals(skyrainingYml.getTitle(), "了解一下");
-        Assert.assertEquals(skyrainingYml.getDescription(), "问题不大");
+    	System.out.println(skyrainingYmlUtil.getTitle());
+        Assert.assertEquals(skyrainingYmlUtil.getTitle(), "了解一下");
+        Assert.assertEquals(skyrainingYmlUtil.getDescription(), "问题不大");
     }
 
     
